@@ -1,0 +1,140 @@
+.footer-and-contact {
+	background: linear-gradient(to top, #09052fd6, #20055bb0),url(../../img/footere@2x.png) center/cover no-repeat;
+	font-family: var(--primary-font-family);
+	font-size: var(--primary-font-size);
+	color: var(--primary-color);
+
+	.title-contact{
+		margin-top: 32px;
+		margin-bottom: 42px;
+		font-size: 15px;
+  		font-weight: 900;
+  		line-height: 1.73px;
+  		text-transform: uppercase;
+  		letter-spacing: 0.75px;
+	}
+
+	.content-flex-footer {
+		margin-bottom: 80px;
+
+		.block-description {
+			.logo {
+				margin-bottom: 27px;
+			}
+
+			.footer-description {
+				font-weight: 300;
+				line-height: 1.86;
+  				letter-spacing: 0.35px;
+  				color: #fff;
+			}
+		}
+
+		.block-our-contact {
+			font-weight: 300;
+			line-height: 1.86;
+			letter-spacing: 0.35px;
+
+			.location {
+				position:relative;
+				margin: 0 0 20px 30px;
+
+				&:before {
+					content: "";
+				    display: block;
+				    width: 14px;
+				    height: 19px;
+				    position: absolute;
+				    left: -30px;
+				    transform: translateY(20%);
+				    cursor: pointer;
+				    background: no-repeat center/cover url(../../img/location.png);
+				}
+			}
+
+			.phone {
+				margin-left: 30px;
+
+				&:before {
+					content: "";
+				    display: block;
+				    width: 17px;
+				    height: 17px;
+				    position: absolute;
+				    transform: translateY(20%);
+				    cursor: pointer;
+				    background: no-repeat center/cover url(../../img/phone.png);
+				}
+			}
+		}
+
+		.block-connection {
+			.post {
+				margin-bottom: 30px;
+				gap: 10px;
+
+				.connection {
+					padding: 0 17px 0 26px;
+					outline: none;
+					font-weight: 300;
+					letter-spacing: 0.7px;
+					color: rgba(255, 255, 255, 0.75);
+					border: solid 1px #fff;
+					background-color: transparent;
+				}
+
+				.subscription-btn {
+					width: 70px;
+					height: 45px;
+					flex-shrink: 0;
+					border: none;
+					cursor: pointer;
+					background: no-repeat center/cover url(../../img/btn@2x.png);
+				}
+			}
+
+			.social {
+				padding-left: 10px;
+				gap: 8px;
+
+				.social-logo {
+					width: 35px;
+					height: 35px;
+					border: 1px solid white;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+
+	.main-footer {
+		line-height: 1.85;
+		letter-spacing: 0.4;
+
+		.helps-list {
+			padding-left: 0;
+			justify-content: center;
+			gap: 35px;
+
+			.help-item {
+				white-space: nowrap;
+				text-transform: uppercase;
+			}
+		}
+
+		.copyright {
+			font-weight: 200;
+			text-align: center;
+		}
+	}
+
+	@media (min-width: 992px) {
+		.helps-list {
+			justify-content: start;
+		}
+
+		.copyright {
+			text-align: end !important;
+		}
+	}	
+}

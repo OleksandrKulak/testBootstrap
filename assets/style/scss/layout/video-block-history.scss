@@ -1,0 +1,33 @@
+.video-block-history {
+	text-align: center;
+	background: linear-gradient(to top, #09052fd6, #20055bb0),url(../../img/put-city.png) center/cover no-repeat;
+
+	.video-story {
+		position: relative;
+		height: 600px;
+
+		iframe {
+			height: 100%;
+			width: 100%;
+		}
+
+		.title-button {
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			transform: translateX(-50%);
+			font-family: var(--primary-font-family);
+			font-size: 16px;
+			font-weight: 900;
+			letter-spacing: 0.8px;
+			text-transform: uppercase;
+			color: var(--primary-color);
+		}
+	}
+
+	@media (max-width: 920px) {
+		.video-story {
+			height: 320px;
+		}
+	}
+}
