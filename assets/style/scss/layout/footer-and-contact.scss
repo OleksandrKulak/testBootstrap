@@ -114,7 +114,7 @@
 		.helps-list {
 			padding-left: 0;
 			justify-content: center;
-			gap: 35px;
+			gap: 20px;
 
 			.help-item {
 				white-space: nowrap;
@@ -125,6 +125,13 @@
 		.copyright {
 			font-weight: 200;
 			text-align: center;
+			white-space: nowrap;
+		}
+	}
+
+	@media (min-width: 576px) {
+		.helps-list {
+			gap: 35px;
 		}
 	}
 
